@@ -6,10 +6,9 @@ import org.junit.Test;
 import com.thrillio.entities.Weblink;
 import com.thrillio.managers.BookmarkManager;
 
-class WeblinkTest {
-
+public class WeblinkTest {
 	@Test
-	void testIsKidFriendkyEligible() {
+	public void testIsKidFriendkyEligible() {
 		//Test 1- porn in url-- false
 		Weblink weblink = BookmarkManager.getInstance().createWeblink(2000,"Taming Tiger, Part 2","http://www.javaworld.com/article/2072759/core-java/taming-porn--part-2.html","http://www.javaworld.com","unknown");
 		boolean isKidFriendkyEligible = weblink.isKidFriendkyEligible();
